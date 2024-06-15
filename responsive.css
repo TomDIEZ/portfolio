@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .info-block {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .tab button {
+        padding: 8px 10px;
+        font-size: 0.8em;
+    }
+    .note {
+        top: 5px;
+        right: 5px;
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .skill-bar {
+        width: 55%;
+    }
+}
+
+@media (max-width: 480px) {
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .info-block {
+        padding: 10px 5px;
+    }
+
+    .info-block h2, .info-block p {
+        font-size: 0.9em;
+    }
+
+    .note {
+        position: static;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 0;
+        font-size: 0.7em;
+    }
+
+    .skill-bar {
+        width: 45%;
+    }
+}
