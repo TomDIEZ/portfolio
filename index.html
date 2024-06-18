@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+<body>
+<div class="ide-container">
+    <div class="tab">
+        <button id="tab1" onclick="changeTab('content1')"><i class="fab fa-laravel icon-laravel"></i> Études</button>
+        <button id="tab2" onclick="changeTab('content2')"><i class="iconify icon icon-react" data-icon="logos:react" data-inline="false"></i> Compétences</button>
+        <button id="tab3" onclick="changeTab('content3')"><i class="fas fa-code icon-code"></i> Projets</button>
+        <button id="tab4" onclick="changeTab('content4')"><i class="iconify icon icon-blazor" data-icon="simple-icons:blazor" data-inline="false"></i> Informations Personnelles</button>
+    </div>
+
+
+    <div id="content1" class="content active">
+        <div class="info-block laravel">
+            <h2>IUT d’Arles</h2>
+            <p><strong>BUT Informatique</strong> - Parcours réalisation d’applications : conception, développement, validation</p>
+            <p>2023-2025</p>
+        </div>
+        <div class="info-block laravel">
+            <h2>Lycée Notre-Dame de Sion, Marseille</h2>
+            <p><strong>Prépa MPSI</strong> - Maths, Physique et Sciences de l’ingénieur</p>
+            <p>2022-2023</p>
+        </div>
+        <div class="info-block laravel">
+            <h2>Lycée Paul Melizan, Marseille</h2>
+            <p><strong>Baccalauréat Général</strong> - Spécialités Mathématiques, Physique, Littérature Anglaise</p>
+            <p>2019-2022</p>
+        </div>
+    </div>
+
+
+
+    <div id="content2" class="content" style="display:none;">
+        <div class="note">Ceci est une barre de préférence. Je laisse mes professeurs juger de mes compétences.</div>
+
+        <div class="info-block react">
+            <h2>Front-end</h2>
+            <p>CSS <span class="skill-bar"><span class="skill-level" style="width: 60%;"></span></span> 7/10</p>
+            <p>HTML <span class="skill-bar"><span class="skill-level" style="width: 70%;"></span></span> 6/10</p>
+        </div>
+        <div class="info-block react">
+            <h2>Back-end</h2>
+            <p>C# <span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></span> 8/10</p>
+            <p>Python <span class="skill-bar"><span class="skill-level" style="width: 70%;"></span></span> 8/10</p>
+            <p>Javascript <span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></span> 7/10</p>
+            <p>PHP <span class="skill-bar"><span class="skill-level" style="width: 70%;"></span></span> 6/10</p>
+        </div>
+        <div class="info-block react">
+            <h2>Frameworks</h2>
+            <p>Blazor <span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></span> 8/10</p>
+            <p>Laravel <span class="skill-bar"><span class="skill-level" style="width: 80%;"></span></span> 7/10</p>
+            <p>React <span class="skill-bar"><span class="skill-level" style="width: 70%;"></span></span> 7/10</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="content3" class="content" style="display:none;">
+        <div class="info-block projet">
+            <h3>Blazor Server : CartographieSI</h3>
+            <p>Conception d’une application de cartographies des systèmes d’information. Développé lors de mon stage chez Cogex.</p>
+            <a href="./Extras/Rapport_Stage_DIEZ_TOM.pdf" target="_blank">Lire mon rapport de stage</a>
+            <div class="video-container">
+                <video controls muted loop>
+                    <source src="./Videos/Blazor_CartographieSI.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="info-block projet">
+            <h3>Laravel : BookStore</h3>
+            <p>Application E-commerce de livres. Développé dans le cadre d'un projet scolaire.</p>
+            <div class="video-container">
+                <video controls muted loop>
+                    <source src="./Videos/Laravel_BookStore.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <div class="info-block projet">
+            <h3>React : Presentation</h3>
+            <p>Application de présentation style Powerpoint. Développé dans le cadre d'un projet scolaire.</p>
+            <div class="video-container">
+                <video controls muted loop>
+                    <source src="./Videos/React_Presentation.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="content4" class="content" style="display:none;">
+        <div class="info-block blazor">
+            <h3>Contact</h3>
+            <p><strong>Adresse :</strong> 80 chemin de la Salette, 13011 Marseille</p>
+            <p><strong>Téléphone :</strong> 0768547692</p>
+            <p><strong>Email :</strong> <a href="mailto:tdiez13011@gmail.com">tdiez13011@gmail.com</a></p>
+        </div>
+
+        <div class="info-block blazor">
+            <h3>Mon Parcours</h3>
+            <p>Tout a commencé en classe de première. J'ai décidé de suivre la formation complète de Grafikart sur le HTML et le CSS. Après cela, j'ai développé quelques petits projets qui m'ont donné envie de continuer. Je me suis donc dirigé vers Python et le plaisir de développer fut au rendez-vous. Depuis, je n'ai pas passé un week-end sans développer. Même en vacances, je suis équipé de mon ordinateur portable. Cette passion pour l'informatique ne se limite pas seulement à la programmation mais aussi à toute forme de technologie. </p>
+        </div>
+
+        <div class="info-block blazor">
+            <h3>Mon Futur</h3>
+            <p>Je me plais dans mes études donc je souhaite continuer.</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
